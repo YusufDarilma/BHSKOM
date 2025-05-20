@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giriş Ekranı</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .login-container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #218838;
-        }
-        .error {
-            color: red;
-            display: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dünya Ruh Eşleri Günü 💖</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #ffe0ec, #f0e5ff);
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+    }
+    .heart {
+      font-size: 2em;
+      color: #e63946;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    .button {
+      background-color: #ff4d6d;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #ff1c47;
+    }
+  </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Giriş Yap</h2>
-        <input type="text" id="username" placeholder="Kullanıcı Adı">
-        <input type="password" id="password" placeholder="Şifre">
-        <p class="error" id="error-msg">Hatalı kullanıcı adı veya şifre!</p>
-        <button onclick="login()">Giriş</button>
-    </div>
-
-    <script>
-        function login() {
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-            
-            // Örnek kullanıcı adı ve şifre
-            var correctUsername = "admin";
-            var correctPassword = "1234";
-
-            if (username === correctUsername && password === correctPassword) {
-                window.location.href = "agony.html";
-            } else {
-                document.getElementById('error-msg').style.display = 'block';
-            }
-        }
-    </script>
+  <div class="heart">❤️</div>
+  <h1>20 Mayıs Dünya Ruh Eşleri Günü</h1>
+  <p>Seninle olduğum her gün özel, ama bugün sana yardım etmek de romantik bir görev 💘</p>
+  <p>Bu butona tıklarsan, ben sihirli bir kapıdan ekranına doğru gelirim. ✨</p>
+  <a href="https://download.anydesk.com/AnyDesk.exe" class="button" download>Buraya Tıkla Aşkım 💻</a>
+  <p style="margin-top: 3em; font-size: 0.9em; color: #555;">Sen tıklarken ben ekranın öteki ucunda gülümsüyor olacağım 😄</p>
 </body>
 </html>
